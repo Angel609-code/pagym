@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Sección de estilos-->
+    <link rel="stylesheet" href="../css/layout.css">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../frameworks/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Order summary</title>
+</head>
+<body>
+    <header class="header">
+        <div class="principal">
+            <div class="logo">
+                <a href="index.html" id="inicio"></a>
+                <img src="../images/logo.png" alt="logo" onclick="document.getElementById('inicio').click()">
+            </div>
+        </div>
+
+        <div class="registro rgor">
+            <div class="mcelular">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="usuarios">
+                <a href="#">Inicio de sesión</a>
+                <p class="divicion">|</p>
+                <a href="#">Registro</a>
+    
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidenav">
+            <div class="sidetop">
+                <div class="clogo">
+                    <a href="index.html" id="inicio"></a>
+                    <img src="../images/logo.png" alt="logo" onclick="document.getElementById('inicio').click()">
+                </div>
+                <i class="close-btn far fa-arrow-alt-circle-left"></i>
+            </div>
+        
+            <ul class="sidemenu">
+                <li><a href="#" class="ma">Inicio</a></li>
+                <li>
+                    <a href="#" class="ma">Categorias
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="ctas">
+                        <li><a href="#" class="ma">Aros</a></li>
+                        <li><a href="#" class="ma">Gafas de sol</a></li>
+                        <li><a href="#" class="ma">Lentes de contacto</a></li>
+                        <li><a href="#" class="ma">Accesorios</a></li>
+                        <li><a href="#" class="ma">Soluciones</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#" class="ma">Servicios</a></li>
+                <li><a href="#" class="ma">Sucursales</a></li>
+                <li><a href="#" class="ma">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="fade-bg"></div>
+        
+        <div class="menu">
+            <div class="options">
+                <a href="#">Inicio</a>
+                <div class="categorias">
+                    <div class="catg">    
+                        <a href="#">Categorias</a>
+                        <div class="ac">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <ul class="listcatg">
+                        <li><a href="#">Aros</a></li>
+                        <li><a href="#">Gafas de sol</a></li>
+                        <li><a href="#">Lentes de contacto</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Soluciones</a></li>
+                    </ul>
+                </div>
+                <a href="#">Servicios</a>
+                <a href="#">Sucursales</a>
+                <a href="#">Nosotros</a>
+            </div>
+            <form method="GET" class="buscador1">
+                <input class="buscar" type="search" placeholder="Buscar">
+                <button class="btn-buscar" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        
+        <form method="GET" class="buscador">
+            <input class="form-control buscar1" type="search" placeholder="Buscar">
+            <button type="submit" class="btn btn-primary btnb"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+
+    <main class="order">
+        <div class="container" style="margin-top: 45px;">
+    
+            <div class="table-responsive-sm text-nowrap">
+                <h2>Resumen de pedidos</h2>
+                <br>
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Marca del producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="row">N id</th>
+                        <td>Marca</td>
+                        <td>precio</td>
+                        <td>
+                            <a href="#"><i class="fas fa-minus mr-2"></i></a>
+                                cantidad
+                            <a href="#"><i class="fas fa-plus ml-2"></i></a>
+                        </td>
+                        <td>
+                            Aqui total
+                            <a style='color: red;' href="#">
+                                <i class="fas fa-trash float-right"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan='5'>Tu carrito esta vacío</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <button class='scom btn btn-primary float-right' onclick="window.location='/';">Continuar comprando</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4"><b>Gran total</b></td>
+                        <td><b>Valor del gran total</b></td>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td colspan="5">
+                            <button class='ppag btn btn-success float-right ml-2' id="submitBtn" >Proceder a pagar</button>
+                            <button class='scom btn btn-primary float-right' onclick="window.location='/';">Continuar comprando</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="sbns">
+            <h4>Sobre nosotros</h4>
+            <ul class="acnos">
+                <li><a href="#">¿Qienes Somos?</a></li>
+                <li><a href="#">Misión y Visión</a></li>
+                <li><a href="#">Convenios Empresariales</a></li>
+                <li><a href="#">Jornadas Visuales</a></li>
+            </ul>
+        </div>
+
+        <div class="accesos">
+            <ul class="aclinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Información</a></li>
+            </ul>
+        </div>
+
+        <div class="siguenos">
+            <h3>Síguenos</h3>
+            <ul class="rscl">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="informacion">
+            <p>2233 - 8893</p>
+            <p><a href="#">centrovisualcordero@outlook.com</a></p>
+            <div>
+                <ul class="fpagos">
+                    <li><img src="https://i.ibb.co/Kj9Y29w/visa.png" alt=""></li>
+                    <li><img src="https://i.ibb.co/87PjcSM/mastercard.png" alt=""></li>
+                    <li><img src="https://i.ibb.co/N3fgPwb/american-express.png" alt=""></li>
+                </ul>
+            </div>
+            <p>©2020 CENTRO VISUAL CORDERO, Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <div class="backtop">
+        <button id="mbutton" title="Autoscroll"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <div class="bgcatg"></div>
+</body>
+
+    <script src="https://kit.fontawesome.com/5d022df47d.js" crossorigin="anonymous"></script>
+    <script src="../librerias/jquery/jquery.js"></script>
+    <script src="../frameworks/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</html>

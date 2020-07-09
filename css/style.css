@@ -1,0 +1,9 @@
+.order{
+    margin: 80px 0;
+    margin-bottom: 300px;
+}
+
+.rgor:after{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    background: #7D4006;
+}

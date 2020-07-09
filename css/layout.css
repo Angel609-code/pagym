@@ -659,6 +659,10 @@ ul{
     width: 150%;
 }
 
+.id{
+    display: none;
+}
+
 /* Media queries*/
 
 
@@ -896,7 +900,7 @@ ul{
         text-align: right;
     }
     .carousel{
-        height: 70vh;
+        height: 85vh;
     }
 }
 
