@@ -1,0 +1,907 @@
+@import url(//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@font-face {font-family: "Bahnschrift"; src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot"); src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.svg#Bahnschrift") format("svg"); }
+
+
+body{
+    margin: 0;
+    padding: 0;;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.principal{
+    position: relative;
+    padding: 10px 0;
+}
+
+.principal .logo{
+    height: 80px;
+    text-align: center;
+}
+
+.logo img{
+    height: 100%;
+    cursor: pointer;
+}
+
+.registro{
+    position: relative;
+}
+
+.usuarios{
+    color: #707070;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    right: 2em;
+    bottom: 0;
+    font-family: Bahnschrift;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.usuarios a{
+    color: #707070;
+}
+
+.usuarios a:hover{
+    text-decoration: none;
+}
+
+.usuarios .divicion{
+    color: #707070;
+    margin: 0;
+}
+
+.menu{
+    position: relative;
+    height: 40px;
+    background: #07196B;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu .options{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    align-items: center
+}
+
+.menu .options a{
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 2em;
+    text-decoration: none;
+}
+
+.categorias .catg{
+    display: flex;
+    align-items: center;
+}
+
+.categorias .catg a{
+    margin-right: 1em;
+}
+
+.categorias .catg .ac{
+    padding: 5px 7px;
+    line-height: 1;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categorias .catg .ac.active{
+    transform: rotate(180deg);
+}
+
+.categorias{
+    position: relative;
+    margin-right: 2em;
+}
+
+.categorias ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background: #07196B;
+    width: 130%;
+    top: 35px;
+    left: -15%;
+    display: block;
+}
+
+.categorias ul li{
+    padding-left: 15px;
+    display: none;
+}
+
+.categorias ul li:hover{
+    background: #ccc;
+}
+
+.categorias ul li a:hover{
+    color: #000;
+    font-weight: 600;
+}
+
+.categorias ul li a{
+    display: block; 
+    padding: 12px 0;
+    width: 100%;
+}
+
+.categorias ul li.active{
+    display: block;
+}
+
+.buscar{
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fff;
+}
+
+.buscador{
+    display: none;
+}
+
+
+.btn-buscar{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.bgcarg{
+    display: none;
+}
+
+.bgcatg.active{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.backtop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 200;
+}
+
+.carousel .carousel-indicators li{
+    background: #525252;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    border-radius: 50%;
+    opacity: 1;
+    margin: 0 0.5em;
+}
+
+.carousel .carousel-indicators li.active{
+    background: #fff;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+#arrw{
+    width: 32px;
+    height: 32px;
+    background: transparent;
+}
+
+#arrw i{
+    color: #000;
+    font-size: 2em;
+    z-index: 15;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-inner .carousel-item, .carousel-inner .carousel-item img{
+    height: 100%;
+}
+
+.titulo{
+    color: #1E56A0;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.line{
+    border-top-width: 3px;
+    border-color: #1E56A0;
+    margin: 10px 0;
+}
+
+.card.nov{
+    border: 1px solid #0000FF;
+    border-radius: 0;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card.nov:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.lentesimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.lentesimg img{
+    width: 100%;
+}
+
+.price{
+    color: #1E56A0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.marca{
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+#stars{
+    display: none;
+}
+
+.megusta i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.05em;
+    margin-left: 5px;
+    text-shadow: -1px 0 #0000FF, 0 1px #0000FF, 1px 0 #0000FF, 0 -1px #0000FF;
+}
+
+.btncart{
+    outline: none;
+    background: #fff;
+    border: 1px solid #0000FF;
+    border-radius: 30px;
+    padding: 5px 40px;
+    margin-bottom: 20px;
+}
+
+.btncart:focus{
+    outline: none;
+}
+
+.btncart:hover{
+    background: #1E56A0;
+    color: #fff;
+}
+
+.ofms{
+    display: grid;
+    grid-template-areas: "Examen Accesorios"
+                         "Examen lentes";
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    height: 425px;
+}
+
+.of1, .of2, .of3{
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.of1:hover, .of2:hover, .of3:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.of1{
+    grid-area: Examen;
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.of2{
+    grid-area: Accesorios;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.of3{
+    grid-area: lentes;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.ofimg1{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+.ofimg1 img{
+    width: 100%;
+    width: 220%;
+    transform: translateX(-30%);
+}
+
+.ofimg2, .ofimg3{
+    width: 55%;
+    overflow: hidden;
+}
+
+.ofimg2 img, .ofimg3 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.tofc{
+    color: #1E56A0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+.tofc{
+    margin: auto;
+    text-align: center;
+}
+
+.ntsmr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ntsmr .mr{
+    width: 30%;
+    margin-right: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.ntsmr .mr:hover{
+    transform: scale(1.2) skewX(-5deg) ;
+    transition: all 0.4s ease-in;
+}
+
+.ntsmr .mr img{
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    background: #07196B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acnos, .aclinks, .rscl, .fpagos{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.acnos li, .aclinks li, .rscl li, .fpagos li{
+    margin: 5px 0;
+}
+
+.acnos a, .aclinks a, .rscl a, .informacion p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.acnos a:hover, .aclinks a:hover, .rscl a:hover, .informacion p a:hover{
+    color: #fff;
+}
+
+.sbns, .accesos, .siguenos .informacion{
+    margin-bottom: 20px;
+}
+
+.siguenos{
+    text-align: center;
+}
+
+.rscl li a i{
+    margin-right: 12px;
+    font-size: 1.3em;
+    transition: all 0.3s;
+}
+
+.rscl li a i:hover{
+    transform: scale(1.4);
+    transition: all 0.3s;
+}
+
+.rscl{
+    display: flex;
+}
+
+.informacion{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.fpagos li{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+.aclinks, .sbns h4,.siguenos h3{
+    text-transform: uppercase;
+}
+
+
+#mbutton{
+    display: none;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #7D4006;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+#mbutton:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.mcelular{
+    display: none;
+}
+
+::-webkit-input-placeholder { color: #ccc; }
+:-moz-placeholder { color: #ccc; opacity: 1; }
+::-moz-placeholder { color: #ccc; opacity:  1; }
+:-ms-input-placeholder { color: #ccc; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none;}
+
+/* Nav*/
+.ma:hover{
+    text-decoration: none;
+}
+
+.ma:active{
+    text-decoration: none;
+}
+
+.ma:visited{
+    color:#000;
+}
+
+.ma{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+.sidenav{
+    background: #fff;
+    width: 270px;
+    min-width: 270px;
+    position: fixed;
+    left: -270px;
+    top: 0px;
+    height: 100%;
+    transition: all 0.25s linear;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidetop{
+    padding: 25px 10px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clogo{
+    height: 55px;
+}
+
+.clogo img{
+    height: 100%;
+}
+
+.sidetop .ma{
+    color: #0c27a6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidetop i{
+    color: #0c27a6;
+    font-size: 1.5em;
+    float: right;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.sidetop i:hover{
+    cursor: pointer;
+}
+
+.sidemenu{
+    padding: 0;
+}
+
+.sidemenu li ul{
+    background: #0c27a6;
+    padding: 0;
+}
+
+.sidemenu li ul .ma{
+    color: white;
+    display: block;
+    padding-left: 80px;
+}
+
+.sidemenu li .ma{
+    display: block;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+.sidemenu li .ma:hover{
+    background: #f2f2f2;
+}
+
+.sidemenu li ul .ma:hover{
+    background: #f2f2f2;
+    color: #000000;
+}
+
+.sidemenu li a i{
+    float: right;
+    line-height: 28px;
+}
+
+.sidemenu li ul{
+    display: none;
+}
+
+.fade-bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 600;
+    display: none;
+    top: 0;
+}
+
+.fade-bg.active{
+	display: block;
+	opacity: 0.5;
+}
+
+.sidenav.active{
+    left: 0;
+}
+
+.mcelular{
+    cursor: pointer;
+}
+
+.sidemenu .ctas li{
+    padding: 0;
+    transform: translateX(-40px);
+    width: 150%;
+}
+
+/* Media queries*/
+
+
+@media screen and (max-width: 995px){
+    .ofms{
+        grid-template-areas: "Examen"
+        "Accesorios"
+        "lentes";
+        grid-template-columns: 1fr;
+        height: 1225px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0;
+        margin: auto;
+    }
+
+    .of1, .of2, .of3{
+        margin: 0;
+        height: 400px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .tf1, .tf2, .tf3{
+        font-size: 1.6em;
+    }
+
+    .tf1, .tf2, .tf3{
+        height: 30%;
+        padding-top: 20px;
+    }
+
+
+    .of1 .ofimg1{
+        height: 130%;
+    }
+
+    .ofimg2, .ofimg3{
+        width: 100%;
+    }
+
+    .carousel{
+        height: 45vh;
+    }
+
+    .card.nov{
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        border: none;
+        border-bottom: 1px solid #0000FF;
+    }
+
+    .card.nov .img{
+        width: 45%;
+        position: relative;
+    }
+
+    .card.nov .img .lentesimg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -80%);
+    }
+}
+
+@media screen and (max-width: 960px){
+    .menu{
+        display: none;
+    }
+
+    .registro{
+        position: static;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        position: relative;
+    }
+
+    .registro .usuarios{
+        position: static;
+        margin: 0;
+    }
+
+    .registro::after{
+        content:'';
+        position: absolute;
+        background: #0079FB;
+        height: 10px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .buscador{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    .form-control.buscar1{
+        width: 83%;
+    }
+
+    .btn.btn-primary.btnb{
+        padding: 0 30px;
+    }
+
+    .mcelular{
+        display: block;
+        font-size: 1.3em;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header{
+        margin: 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 529px){
+    .card.nov{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        border: none;
+        border-bottom: 1px solid #0000FF;
+        height: 400px;
+    }
+
+    .card.nov .img{
+        width: 100%;
+        height: 35%;
+        position: static;
+    }
+
+    .card.nov .img .lentesimg{
+        position: static;
+        transform: translate(0%, -10%);
+    }
+
+    .sbns h4, .siguenos h3{
+        font-size: 1.2em;
+    }
+
+    .acnos a, .aclinks a, .rscl a, .informacion p a{
+        font-size: 0.9em;    
+    }
+
+    .mcelular{
+        font-size: 1.2em;
+        padding: 0 5px;
+    }
+
+    .usuarios{
+        font-size: 0.9em;
+        width: 220px;
+    }
+
+    .form-control.buscar1{
+        width: 73%;
+    }
+
+    .btn.btn-primary.btnb{
+        padding: 0 15px;
+    }
+
+    .header{
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .ofms{
+        height: 825px;
+    }
+
+    .of1, .of2, .of3{
+        height: 270px;
+    }
+
+    .tf1, .tf2, .tf3{
+        font-size: 1.2em;
+    }
+    .tf1, .tf2, .tf3{
+        padding-top: 10px;
+    }
+
+    .carousel{
+        height: 40vh;
+    }
+
+}
+
+@media screen and (min-width: 460px){
+    .footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sbns, .accesos, .siguenos .informacion{
+        margin-right: 10%;
+    }
+
+    .informacion{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 610px){
+    .carousel{
+        height: 55vh;
+    }
+}
+
+@media screen and (min-width: 1286px){
+    .footer{
+        padding: 20px 5%;
+    }
+    .sbns, .accesos, .siguenos .informacion{
+        margin-right: 5%;
+    }
+
+    .informacion{
+        margin-right: 0;
+        margin-left: 10%;
+        text-align: right;
+    }
+    .carousel{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1376px){
+    .carousel{
+        height: 75vh;
+    }
+}

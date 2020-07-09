@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Sección de estilos-->
+    <link rel="stylesheet" href="../css/layout.css">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../frameworks/bootstrap/css/bootstrap.min.css">
+
+    <title>Inicio</title>
+</head>
+<body class="body">
+    <main>
+
+        <header class="header">
+            <div class="principal">
+                <div class="logo">
+                    <a href="index.html" id="inicio"></a>
+                    <img src="../images/logo.png" alt="logo" onclick="document.getElementById('inicio').click()">
+                </div>
+            </div>
+    
+            <div class="registro">
+                <div class="mcelular">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <div class="usuarios">
+                    <a href="#">Inicio de sesión</a>
+                    <p class="divicion">|</p>
+                    <a href="#">Registro</a>
+        
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidenav">
+                <div class="sidetop">
+                    <div class="clogo">
+                        <a href="index.html" id="inicio"></a>
+                        <img src="../images/logo.png" alt="logo" onclick="document.getElementById('inicio').click()">
+                    </div>
+                    <i class="close-btn far fa-arrow-alt-circle-left"></i>
+                </div>
+            
+                <ul class="sidemenu">
+                    <li><a href="#" class="ma">Inicio</a></li>
+                    <li>
+                        <a href="#" class="ma">Categorias
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="ctas">
+                            <li><a href="#" class="ma">Aros</a></li>
+                            <li><a href="#" class="ma">Gafas de sol</a></li>
+                            <li><a href="#" class="ma">Lentes de contacto</a></li>
+                            <li><a href="#" class="ma">Accesorios</a></li>
+                            <li><a href="#" class="ma">Soluciones</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="ma">Servicios</a></li>
+                    <li><a href="#" class="ma">Sucursales</a></li>
+                    <li><a href="#" class="ma">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="fade-bg"></div>
+            
+            <div class="menu">
+                <div class="options">
+                    <a href="#">Inicio</a>
+                    <div class="categorias">
+                        <div class="catg">    
+                            <a href="#">Categorias</a>
+                            <div class="ac">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="listcatg">
+                            <li><a href="#">Aros</a></li>
+                            <li><a href="#">Gafas de sol</a></li>
+                            <li><a href="#">Lentes de contacto</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                            <li><a href="#">Soluciones</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">Servicios</a>
+                    <a href="#">Sucursales</a>
+                    <a href="#">Nosotros</a>
+                </div>
+                <form method="GET" class="buscador1">
+                    <input class="buscar" type="search" placeholder="Buscar">
+                    <button class="btn-buscar" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            
+            <form method="GET" class="buscador">
+                <input class="form-control buscar1" type="search" placeholder="Buscar">
+                <button type="submit" class="btn btn-primary btnb"><i class="fas fa-search"></i></button>
+            </form>
+        </header>
+
+        <!--Slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.ibb.co/yYN1wW9/Component-46-1.png" id="slimg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ibb.co/8mvFtsj/Group-217.png" id="slimg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ibb.co/KjgqzKM/lentes-de-contacto-ninos.png" id="slimg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span id="arrw" class="carousel-control-prev-icon" aria-hidden="true">
+                <i class="fas fa-chevron-left"></i>
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span id="arrw" class="carousel-control-next-icon" >
+                <i class="fas fa-chevron-right"></i>
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+          
+        <!--Fin slider-->
+        <br>
+        <br>
+          
+        <!--Novedades-->
+        <div class="container">
+            <h1 class="titulo">Novedades</h1>
+            <hr class="line">
+            <br>
+            <br>
+            <!--Novedades de lentes-->
+            <div class="row wow fadeIn">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card nov">
+                        <div class="img">
+                            <div class="lentesimg">
+                                <img src="https://i.ibb.co/MPgkZBk/Mask-Group-23.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title price">$80.00</h5>
+                          <p class="card-text marca">Kenneth Cole</p>
+                          <div class="megusta">
+                            <input type="radio" class="mg1" name="mgst" id="stars" value="0">
+                            <i class="fas fa-star s1 mg-1" ms=1></i>
+                            <i class="fas fa-star s2 mg-1" ms=1></i>
+                            <i class="fas fa-star s3 mg-1" ms=1></i>
+                            <i class="fas fa-star s4 mg-1" ms=1></i>
+                            <i class="fas fa-star s5 mg-1" ms=1></i>
+                          </div>
+                          <br>
+                          <button class="btncart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card nov">
+                        <div class="img">
+                            <div class="lentesimg">
+                                <img src="https://i.ibb.co/MPgkZBk/Mask-Group-23.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title price">$80.00</h5>
+                          <p class="card-text marca">Kenneth Cole</p>
+                          <div class="megusta">
+                            <input type="radio" class="mg2" name="mgst" id="stars" value="0">
+                            <i class="fas fa-star s1 mg-2" ms=2></i>
+                            <i class="fas fa-star s2 mg-2" ms=2></i>
+                            <i class="fas fa-star s3 mg-2" ms=2></i>
+                            <i class="fas fa-star s4 mg-2" ms=2></i>
+                            <i class="fas fa-star s5 mg-2" ms=2></i>
+                          </div>
+                          <br>
+                          <button class="btncart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card nov">
+                        <div class="img">
+                            <div class="lentesimg">
+                                <img src="https://i.ibb.co/MPgkZBk/Mask-Group-23.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title price">$80.00</h5>
+                          <p class="card-text marca">Kenneth Cole</p>
+                          <div class="megusta">
+                            <input type="radio" class="mg3" name="mgst" id="stars" value="0">
+                            <i class="fas fa-star s1 mg-3" ms=3></i>
+                            <i class="fas fa-star s2 mg-3" ms=3></i>
+                            <i class="fas fa-star s3 mg-3" ms=3></i>
+                            <i class="fas fa-star s4 mg-3" ms=3></i>
+                            <i class="fas fa-star s5 mg-3" ms=3></i>
+                          </div>
+                          <br>
+                          <button class="btncart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>  
+        </div>
+        <br>
+        <br>
+        
+        <!--Sección ofrecemos-->
+        <div class="container">
+            <h1 class="titulo">Ofrecemos</h1>
+            <hr class="line">
+            <br>
+            <br>
+            <div class="ofms">
+                <a class="of1" href="#">
+                    <div class="ofimg1">
+                        <img src="https://i.ibb.co/pjVZmks/MWYMKE.jpg" alt="">
+                    </div>
+                    <div class="tofc tf1">
+                        <p>Examen de la vista computarizado</p>
+                    </div>
+                </a>
+                <a class="of2" href="#">
+                    <div class="ofimg2 ">
+                        <img src="https://i.ibb.co/r78795g/61e0cmjik-PL-AC-SL1001.jpg" alt="">
+                    </div>
+                    <div class="tofc tf2">
+                        <p>Accesorios</p>
+                    </div>
+                </a>
+                <a class="of3" href="#">
+                    <div class="ofimg3">
+                        <img src="https://i.ibb.co/0JqN663/putting-lens-in-eye.jpg" alt="">
+                    </div>
+                    <div class="tofc tf3">
+                        <p>Lentes de contacto</p>
+                    </div>
+                </a>
+            </div>
+        </div>     
+        <br>
+        <br>
+
+        <!--Sección nuestras marcas-->
+        <div class="container">
+            <h1 class="titulo">Nuestras marcas</h1>
+            <hr class="line">
+            <br>
+
+            <div class="ntsmr">
+                <a class="mr" href="#">
+                    <img src="https://i.ibb.co/rpXynZM/Calvin-Klein-Logo.png" alt="Calvin klein">
+                </a>
+                <a class="mr" href="#">
+                    <img src="https://i.ibb.co/0VdXD8t/converse.png" alt="Converse">
+                </a>
+                <a class="mr" href="#">
+                    <img src="https://i.ibb.co/PTzcLgV/gant.png" alt="Gant">
+                </a>
+
+                <a class="mr" href="#">
+                    <img src="https://i.ibb.co/DCmv3hn/GUESS-Logo.png" alt="Guess">
+                </a>
+                <a class="mr" href="#"> 
+                    <img src="https://i.ibb.co/R0S3n8y/Kenneth-Cole.png" alt="Kenneth-Cole">
+                </a>
+                <a class="mr" href="#">
+                    <img src="https://i.ibb.co/BcQHLNs/Pepe-Jeans-Logo.png" alt="Pepe-Jeans">
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <footer class="footer">
+            <div class="sbns">
+                <h4>Sobre nosotros</h4>
+                <ul class="acnos">
+                    <li><a href="#">¿Qienes Somos?</a></li>
+                    <li><a href="#">Misión y Visión</a></li>
+                    <li><a href="#">Convenios Empresariales</a></li>
+                    <li><a href="#">Jornadas Visuales</a></li>
+                </ul>
+            </div>
+
+            <div class="accesos">
+                <ul class="aclinks">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Información</a></li>
+                </ul>
+            </div>
+
+            <div class="siguenos">
+                <h3>Síguenos</h3>
+                <ul class="rscl">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="informacion">
+                <p>2233 - 8893</p>
+                <p><a href="#">centrovisualcordero@outlook.com</a></p>
+                <div>
+                    <ul class="fpagos">
+                        <li><img src="https://i.ibb.co/Kj9Y29w/visa.png" alt=""></li>
+                        <li><img src="https://i.ibb.co/87PjcSM/mastercard.png" alt=""></li>
+                        <li><img src="https://i.ibb.co/N3fgPwb/american-express.png" alt=""></li>
+                    </ul>
+                </div>
+                <p>©2020 CENTRO VISUAL CORDERO, Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <div class="backtop">
+        <button id="mbutton" title="Autoscroll"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <div class="bgcatg"></div>
+</body>
+    <!--Seccion de Scripts-->
+    <script src="https://kit.fontawesome.com/5d022df47d.js" crossorigin="anonymous"></script>
+    <script src="../librerias/jquery/jquery.js"></script>
+    <script src="../frameworks/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</html>
