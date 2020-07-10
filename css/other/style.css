@@ -1,0 +1,259 @@
+.isesion.container, .rusuariov.container{
+    margin-bottom: 250px;
+    padding: 40px 25px;
+    margin-top: 10px;
+}
+
+.isesion.container h1, .rusuariov.container h1{
+    margin-bottom: 10px;
+}
+
+.isesion.container p, .rusuariov.container p{
+    color: #525252;
+}
+
+.isesion.container .form-group, .rusuariov.container .form-group{
+    line-height: 50px;
+}
+
+.rusuarioc.container, .rusuariov.container{
+    padding: 40px 20px;
+    max-width: 700px;
+}
+
+.rusuarioc.container textarea, .rusuariov.container textarea{
+    resize: none;
+}
+
+.imagenuc, .imagenuv{
+    display: flex;
+    flex-direction: column;
+}
+
+#imageperfiluc, #imageperfiluv, #imageprod{
+    display: none;
+}
+
+div.container.ver, div.container.mostrar{
+    display: flex;
+    justify-content: center;
+}
+
+.lista{
+    list-style-type: disc;
+}
+
+.container.notap, .container.condicionesu{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.principal, .pprod .container{
+    padding-top: 40px;
+}
+
+.card{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.novedades{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 15px;
+}
+
+.pdt{
+    display: block;
+    width: 250px;
+}
+
+.row.wow.fadeIn{
+    margin-top: 35px;
+}
+
+.view.overlay{
+    cursor: pointer;;
+}
+
+.view.overlay img{
+    box-sizing: content-box;
+}
+
+.abajo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+
+.card-body .grey-text{
+    color: #888;
+}
+
+.vmas{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.vmas:hover{
+    background: #E9EBEC;
+}
+
+.principal .container, .pprod .container{
+    text-align: center;
+}
+
+.principal .container h1, .pprod .container h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.principal .container h1 span, .pprod .container h1 span{
+    color:#1E8BC3;
+}
+
+.destacados, .blg, .blog, .paginacion{
+    margin-top: 30px;
+}
+.container.blg .blog .imgblg{
+    height: 200px;
+}
+
+.container.blg .blog .imgblg img{
+    height: 100%;
+}
+
+.container.blg .blog .contenido{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.principal .container hr{
+    margin-top: 50px;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+.side img{
+    height: 45vh;
+}
+
+.mg{
+    margin-top: 15px;
+}
+
+.ipt{
+    margin-right: 15px;
+}
+
+.comp{
+    margin-right: 15px;
+}
+
+.ap{
+    margin-top: 45px;
+}
+
+.recom{
+    text-align: center;
+}
+
+#descp{
+    resize: none;
+}
+
+
+/* Media queries*/
+@media screen and (min-width : 1023px){
+    .isesion.container{
+        width: 750px;
+        margin: 10px auto 165 auto;
+        padding: 40px 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .isesion.container, .rusuariov.container{
+        margin-bottom: 60px;
+        padding: 10px 25px;
+        margin-top: 10px;
+    }
+
+    .carousel-inner img{
+        width:300px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 740px){
+    .pdt{
+        width: 320px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .carousel-inner img{
+        width:250px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .carousel.slide, .carousel-inner, .carousel-inner .carousel-item img{
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 1367px){
+    .rusuarioc.container, .rusuariov.container{
+        padding: 50px 20px;
+        max-width: 900px;
+    }
+    .side img{
+        height: 55vh;
+    }
+}
+
+
+@media screen and (min-width: 1600px){
+    .isesion.container{
+        width: 950px;
+        margin: 10px auto 165 auto;
+        padding: 70px 20px;
+    }
+
+    .rusuarioc.container, .rusuariov.container{
+        padding: 60px 30px;
+        max-width: 1200px;
+    }
+
+    .carousel.slide, .carousel-inner, .carousel-inner .carousel-item img{
+        height: 73vh;
+    }
+
+    .side img{
+        height: 65vh;
+    }
+    
+}
+
+@media screen and (min-width: 1921px){
+    header{
+        max-width: 1920px;
+    }
+}

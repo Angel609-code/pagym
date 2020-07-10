@@ -186,4 +186,78 @@ $(document).ready(function(){
 
         document.documentElement.scrollTop = 0;
     }
+
+    $('.btn-serv').click(function(e){
+        $('.modal-bg').addClass('active');
+        $('.vmodal').addClass('active');
+    });
+
+    $('.modal-bg').click(function(e){
+        $('.modal-bg').toggleClass('active');
+        $('.vmodal').toggleClass('active');
+    });
+
+    $('.modal-bg2').click(function(e){
+        $('.modal-bg2').toggleClass('active');
+        $('.vmodal2').toggleClass('active');
+    });
+
+    $('.cmodal').click(function(e){
+        $('.modal-bg').toggleClass('active');
+        $('.vmodal').toggleClass('active');
+    });
+
+    $('.cmodal2').click(function(e){
+        $('.modal-bg2').toggleClass('active');
+        $('.vmodal2').toggleClass('active');
+    });
+
+    $('.hora').click(function(e){
+        $('.hora').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.ndias li').click(function(e){
+        $('.ndias li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('#contin').click(function(e){
+        $('.modal-bg').removeClass('active');
+        $('.vmodal').removeClass('active');
+        $('.modal-bg2').addClass('active');
+        $('.vmodal2').addClass('active');
+    });
+
+    $(window).resize(function(){
+        $('.modal-bg').removeClass('active');
+        $('.vmodal').removeClass('active');
+        $('.modal-bg2').removeClass('active');
+        $('.vmodal2').removeClass('active');
+
+    });
+
+    $('#imageperfiluc').on('change', validarImagen);
+
+    /* validar imagenes */
+    function validarImagen(){
+        var archivo = document.getElementById("imageperfiluc");
+        var fileName = document.getElementById("imageperfiluc").value;
+        var idxDot = fileName.lastIndexOf(".") + 1;
+        var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+        if (extFile=="jpg" || extFile=="jpeg" || extFile=="png"){
+
+            if(archivo.files && archivo.files[0]){
+                var ver = new FileReader();
+
+                ver.onload=function(e){
+                    document.getElementById('visualizar').innerHTML =
+                    '<embed src="'+e.target.result+'" width="200" height="200" style="border-radius:50%; margin-top:40px;">';
+                }
+                ver.readAsDataURL(archivo.files[0]);
+            }
+        }else{
+            alert("Solo se permite archivos cuya extensión sean jpg, png o jpeg");
+        }   
+    }
 });

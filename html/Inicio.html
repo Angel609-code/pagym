@@ -6,11 +6,11 @@
     
     <!--Sección de estilos-->
     <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="../frameworks/bootstrap/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Order summary</title>
+
+    <title>Iniciar sesión</title>
 </head>
 <body>
     <header class="header">
@@ -103,34 +103,39 @@
         </form>
     </header>
 
-    <main class="order">
-        <div class="container" style="margin-top: 45px;">
-    
-            <div class="table-responsive-sm text-nowrap mcart">
-                <h2>Resumen de pedidos</h2>
+    <main class="arriba">
+        <div class="container">    
+            <h1>Inicio de sesión</h1>
+            <p>Si aún no tiene una cuenta puede registrarese en el siguiente enlace <span><a href="#">Regristrarse</a></span>.</p>
+            <br>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="nusuario">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="nusuario" placeholder="Ingresar nombre de usuario">
+                </div>
                 <br>
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                    </thead>
-                    <tbody id="contener">
-                        
-                    </tbody>
-                </table>
-            </div>
-            <div id="modocel">
-                
-            </div>
+                <div class="form-group">
+                    <label for="rusuario">Ingresar como</label>
+                    <select class="form-control" id="rusuario" name="tipo">
+                        <option value="common">Cliente</option>
+                        <option value="admin">Administrador</option>
+                    </select>    
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="pusuario">Contraseña</label>
+                    <input type="password" class="form-control" id="pusuario" placeholder="Ingresar contraseña">
+                    <br>
+                    <a href="#">¿Ha olvidado su contraseña?</a>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Acceder</button>
+        </form>
+    </div>
         </div>
     </main>
 
-      <footer class="footer">
+    <footer class="footer">
         <div class="sbns">
             <h4>Sobre nosotros</h4>
             <ul class="acnos">
@@ -174,13 +179,14 @@
             <p>©2020 CENTRO VISUAL CORDERO, Todos los derechos reservados</p>
         </div>
     </footer>
-
+    
     <div class="backtop">
         <button id="mbutton" title="Autoscroll"><i class="fas fa-arrow-up"></i></button>
     </div>
     <div class="bgcatg"></div>
+    
 </body>
-
+    <!--Seccion de Scripts-->
     <script src="https://kit.fontawesome.com/5d022df47d.js" crossorigin="anonymous"></script>
     <script src="../librerias/jquery/jquery.js"></script>
     <script src="../frameworks/bootstrap/js/bootstrap.min.js"></script>

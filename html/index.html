@@ -26,12 +26,15 @@
             </div>
             
             <div class="usuarios">
-                <a href="#">Inicio de sesión</a>
+                <a href="Inicio.html">Inicio de sesión</a>
                 <p class="divicion">|</p>
-                <a href="#">Registro</a>
+                <a href="registro.html">Registro</a>
     
                 <div class="icon">
                     <i class="fas fa-user"></i>
+                </div>
+                <div class="otroicon">
+                    <a href="order_summary.html"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </div>
@@ -60,9 +63,9 @@
                     </ul>
                 </li>
                 
-                <li><a href="#" class="ma">Servicios</a></li>
-                <li><a href="#" class="ma">Sucursales</a></li>
-                <li><a href="#" class="ma">Nosotros</a></li>
+                <li><a href="servicios_1.html" class="ma">Servicios</a></li>
+                <li><a href="Sucursales.html" class="ma">Sucursales</a></li>
+                <li><a href="Nosotros.html" class="ma">Nosotros</a></li>
             </ul>
         </nav>
         <div class="fade-bg"></div>
@@ -70,7 +73,6 @@
         <div class="menu">
             <div class="options">
                 <a href="#">Inicio</a>
-                
                 <div class="categorias">
                     <div class="catg">    
                         <a href="#">Categorias</a>
@@ -79,17 +81,16 @@
                         </div>
                     </div>
                     <ul class="listcatg">
-                        <li><a href="Key/pagina2.html">Aros</a></li>
+                        <li><a href="#">Aros</a></li>
                         <li><a href="#">Gafas de sol</a></li>
                         <li><a href="#">Lentes de contacto</a></li>
                         <li><a href="#">Accesorios</a></li>
                         <li><a href="#">Soluciones</a></li>
                     </ul>
                 </div>
-
-                <a href="#">Servicios</a>
-                <a href="#">Sucursales</a>
-                <a href="#">Nosotros</a>
+                <a href="servicios_1.html">Servicios</a>
+                <a href="Sucursales.html">Sucursales</a>
+                <a href="Nosotros.html">Nosotros</a>
             </div>
             <form method="GET" class="buscador1">
                 <input class="buscar" type="search" placeholder="Buscar">
@@ -173,49 +174,53 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card nov">
                         <div class="img">
                             <div class="lentesimg">
-                                <img src="https://i.ibb.co/MPgkZBk/Mask-Group-23.png" class="card-img-top" alt="...">
+                                <img src="https://i.ibb.co/09jCMhD/Mask-Group-24.png" class="card-img-top" alt="...">
                             </div>
                         </div>
                         <div class="card-body text-center">
-                          <h5 class="card-title price">$80.00</h5>
-                          <p class="card-text marca">Kenneth Cole</p>
-                          <div class="megusta">
-                            <input type="radio" class="mg2" name="mgst" id="stars" value="0">
-                            <i class="fas fa-star s1 mg-2" ms=2></i>
-                            <i class="fas fa-star s2 mg-2" ms=2></i>
-                            <i class="fas fa-star s3 mg-2" ms=2></i>
-                            <i class="fas fa-star s4 mg-2" ms=2></i>
-                            <i class="fas fa-star s5 mg-2" ms=2></i>
-                          </div>
-                          <br>
-                          <button class="btncart">Agregar al carrito</button>
+                            <h1 id="Id-2" class="id">2</h1>
+                            <h5 class="card-title price">$ <span id="Precio-2">140</span>.00 </h5>
+                            <p class="card-text marca" id="Marca-2">Kenneth Cole</p>
+                            <div class="megusta">
+                                <input type="radio" class="mg2" name="mgst" id="stars" value="0">
+                                <i class="fas fa-star s1 mg-2" ms=2></i>
+                                <i class="fas fa-star s2 mg-2" ms=2></i>
+                                <i class="fas fa-star s3 mg-2" ms=2></i>
+                                <i class="fas fa-star s4 mg-2" ms=2></i>
+                                <i class="fas fa-star s5 mg-2" ms=2></i>
+                            </div>
+                            <br>
+                            <button class="btncart" onclick="guardar(2)">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card nov">
                         <div class="img">
                             <div class="lentesimg">
-                                <img src="https://i.ibb.co/MPgkZBk/Mask-Group-23.png" class="card-img-top" alt="...">
+                                <img src="https://i.ibb.co/tCDNnJ6/Mask-Group-25.png" class="card-img-top" alt="...">
                             </div>
                         </div>
                         <div class="card-body text-center">
-                          <h5 class="card-title price">$80.00</h5>
-                          <p class="card-text marca">Kenneth Cole</p>
-                          <div class="megusta">
-                            <input type="radio" class="mg3" name="mgst" id="stars" value="0">
-                            <i class="fas fa-star s1 mg-3" ms=3></i>
-                            <i class="fas fa-star s2 mg-3" ms=3></i>
-                            <i class="fas fa-star s3 mg-3" ms=3></i>
-                            <i class="fas fa-star s4 mg-3" ms=3></i>
-                            <i class="fas fa-star s5 mg-3" ms=3></i>
-                          </div>
-                          <br>
-                          <button class="btncart">Agregar al carrito</button>
+                            <h1 id="Id-3" class="id">3</h1>
+                            <h5 class="card-title price">$ <span id="Precio-3">70</span>.00 </h5>
+                            <p class="card-text marca" id="Marca-3">Carolina Herrera</p>
+                            <div class="megusta">
+                                <input type="radio" class="mg3" name="mgst" id="stars" value="0">
+                                <i class="fas fa-star s1 mg-3" ms=3></i>
+                                <i class="fas fa-star s2 mg-3" ms=3></i>
+                                <i class="fas fa-star s3 mg-3" ms=3></i>
+                                <i class="fas fa-star s4 mg-3" ms=3></i>
+                                <i class="fas fa-star s5 mg-3" ms=3></i>
+                            </div>
+                            <br>
+                            <button class="btncart" onclick="guardar(3)">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
@@ -297,10 +302,10 @@
         <div class="sbns">
             <h4>Sobre nosotros</h4>
             <ul class="acnos">
-                <li><a href="#">¿Qienes Somos?</a></li>
-                <li><a href="#">Misión y Visión</a></li>
-                <li><a href="#">Convenios Empresariales</a></li>
-                <li><a href="#">Jornadas Visuales</a></li>
+                <li><a href="Nosotros.html">¿Qienes Somos?</a></li>
+                <li><a href="Nosotros.html">Misión y Visión</a></li>
+                <li><a href="servicios_1.html">Convenios Empresariales</a></li>
+                <li><a href="servicios_1.html">Jornadas Visuales</a></li>
             </ul>
         </div>
 
@@ -308,9 +313,9 @@
             <ul class="aclinks">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Sucursales</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Información</a></li>
+                <li><a href="Sucursales.html">Sucursales</a></li>
+                <li><a href="servicios_1.html">Servicios</a></li>
+                <li><a href="Servicios_2.html">Información</a></li>
             </ul>
         </div>
 
@@ -348,6 +353,5 @@
     <script src="../librerias/jquery/jquery.js"></script>
     <script src="../frameworks/bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/cart/coo.js"></script>
-    <script src="../js/cart/leer.js"></script>
+    <script src="../js/cart/cart.js"></script>
 </html>

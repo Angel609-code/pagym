@@ -1,9 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 .order{
     margin: 80px 0;
     margin-bottom: 300px;
+}
+.arriba{
+    margin: 80px 0;
+    margin-bottom: 200px;
 }
 
 .rgor:after{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     background: #7D4006;
+}
+
+.contsuc{
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1em;
+}
+
+.contsuc i{
+    margin-right: 3%;
+    padding-top: 5px;
+    color: #07196B;
+}
+
+.sucinfo{
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: "Ubicacion Contacto";
+}
+
+.direccion{
+    grid-area: Ubicacion;
+    width: 70%;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 40px;
+    height: 75%;
+    text-align: justify;
+}
+
+.direccion{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.direccion:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.direccion i{
+    margin-right: 8%;
+    font-size: 2em;
+    color: #98CCFD;
+}
+
+.sucside{
+    grid-area: Contacto;
+    padding: 0px 40px;
+    padding-bottom: 40px;
+}
+
+.sucside .telf, .sucside .wha{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 0px 50px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.sucside .telf img{
+    position: absolute;
+    left: -80px;
+    bottom: 10px;
+}
+
+.sucside .telf{
+    padding-left: 35%;
+}
+
+.sucside .wha{
+    flex-direction: column;
+}
+
+.sucside .wha img{
+    position: absolute;
+    left: -80px;
+    top: 30px;
+}
+
+.sucside .telf:before, .sucside .wha:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    box-shadow: -1px 1px 0 #ccc;
+    left: 0;
+    background: #fff;
+    transform: translate(-45%, -30%) rotate(45deg);
+}
+
+.sucside .telf, .sucside .wha{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.sucside .telf:hover, .sucside .wha:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.sucside .wha:before{
+    transform: translate(-45%, 80%) rotate(45deg);
+}
+
+.sucsdide .telf p{
+    padding-top: 20px;
+}
+
+.mp{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    margin: auto;
+    width: 85%;
+    height: 450px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cordero{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}    
+
+.cordero img{
+    width: 150%;
+    height: 100%;
+    transform: translateX(-15%);
+}
+
+.mision{
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 40px;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    align-items: center;
+    max-height: 200px;
+}
+
+.mision:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.mision:before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    border: none;
+    box-shadow: -1px -1px 1px #ccc;
+    transform: rotate(45deg);
+    top: -20px;
+    left: 80px;
+}
+
+.mision .imgm{
+    width: 100%;
+    max-width: 150px;
+    min-width: 100px;
+    margin-right: 40px;
+}
+
+.mision .imgm img{
+    width: 100%;
+}
+
+.extr{
+    width: 80%;
+    margin: auto;
+}
+
+.rgnost:after{
+    background: #34264A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.optica{
+    width: 100%;
+    height: 65vh;
+}
+
+.optica img{
+    width: 100%;
+    height: 100%;
+}
+
+.mptica, .serv{
+    width: 90%;
+    margin: auto;
+}
+
+.mpta1{
+    display: flex;
+    align-items: center;
+}
+
+.mptaimg{
+    padding: 20px;
+    height: 80%;
+    margin: 0 40px;
+    margin-right: 23px;
+}
+
+.mptaimg img{
+    width: 100%;
+}
+
+.mision .opa{
+    list-style: disc;
+}
+
+.abajo{
+    margin-bottom: 175px;
+}
+
+.serv1{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.serv1 .imgserv{
+    width: 50%;
+    margin: 0;
+}
+
+.serv1 .dat{
+    width: 50%;
+}
+
+.serv1 .imgserv img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.btnserv{
+    border: 1px solid #0000ff;
+    width: 45%;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnserv:hover{
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+
+.btnserv i{
+    font-size: 1.2em;
+    color: #0000ff;
+    transform: translateY(-25%);
+}
+
+.est{
+    flex-direction: row-reverse;
+}
+
+.imgserv{
+    text-align: left;
+}
+
+.est .imgserv{
+    text-align: right;
+}
+
+.epl{
+    width: 70%;
+}
+
+.serv1 .dat a{
+    text-decoration: none;
+}
+
+.modal-bg.active, .modal-bg2.active{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #52525252;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.modal-bg, .vmodal, .modal-bg2, .vmodal2{
+    display: none;
+    transition: all 0.3s;
+}
+
+.vmodal.active, .vmodal2.active{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 90%;
+    height: 65%;
+    min-height: 520px;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s;
+    z-index: 3000;
+}
+
+.cmodal, .cmodal2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.stitulo{
+    text-align: center;
+    margin-top: 40px;
+    color: #1E56A0;
+    font-size: 2.1em;
+    text-transform: uppercase;
+}
+
+.forma{
+    display: flex;
+    height: 70%;
+}
+
+.forma2{
+    display: flex;
+    height: 50%;
+}
+
+.forma .col1{
+    width: 40%;
+    padding: 20px 40px;
+}
+
+.forma .col2{
+    width: 60%;
+    padding: 20px;
+}
+
+.forma2 .col1{
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.forma2 .col2{
+    width: 50%;
+    padding: 20px;
+}
+
+.mensajemodal{
+    margin: 10px 15%;
+}
+
+.col1 h5{
+    color: #1E56A0;
+}
+
+.adicional{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.adicional i{
+    color: #07196B;
+    margin-right: 20px;
+}
+
+.confirmar2{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forma .col2 .horas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hora{
+    padding: 5px 10px;
+    width: 100px;
+    border: 1px solid #707070;
+    border-radius: 0;
+    margin: 0 10px 10px 0;
+    transition: all 0.3s;
+}
+
+.hora p{
+    padding: 0;
+    margin: 0;
+    transform: translateX(10%);
+}
+
+.hora:hover{
+    color: #fff;
+    background: #1E56A0;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.3s;
+}
+
+.vmodal .confirmar{
+    text-align: center;
+}
+
+.confirmar button{
+    width: 25%;
+}
+
+.hora.active{
+    background: #1E56A0;
+    color: #fff;
+}
+
+.calendario{
+    width: 110%;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+
+.mdlfecha{
+    text-align: right;
+}
+
+.guias{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.guias p{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1em;
+    color: #1E56A0;
+    font-weight: 700;
+    margin: 0;
+}
+
+.guias i{
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.dias, .ndias{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.ndias{
+    margin-top: 20px;
+}
+
+.ndias li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ndias li.active, .ndias li:hover{
+    background: #1E56A0;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.calendario hr{
+    width: 80%;
+    color: #1E56A0;
+    margin: 10px auto;
+    background: #1E56A0;
+    border-top-width: 2px;
+}
+
+.prcart{
+    color: #1E56A0;
+    margin: 10px auto;
+    background: #1E56A0;
+    border-top-width: 2px;
+    width: 50%;
+}
+
+#modocel{
+    display: none;
+}
+
+.mcart{
+    display: block;
+}
+
+/* Media queries */
+@media screen and (max-width: 920px){
+    .mptaimg{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 811px){
+    .sucinfo{
+        grid-template-areas: "Ubicacion"
+        "Contacto";
+    }
+
+    .direccion{
+        width: 400px;
+        margin: auto;
+        height: 150px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .sucside{
+        margin: auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    .mision{
+        flex-direction: column;
+        max-height: 600px;
+    }
+
+    .mision .imgm{
+        margin-bottom: 20px;
+    }
+
+    .cordero{
+        height: 280px;
+        overflow: hidden;
+    }    
+
+    .cordero img{
+        width: 150%;
+        height: 100%;
+        transform: translateX(-15%);
+    }
+    .extr ul li{
+        font-size: 1.1em;
+        transform: translateX(-17%);
+    }
+
+    .optica{
+        height: 55vh;
+    }
+    .serv1{
+        flex-direction: column;
+    }
+
+    .serv1 .imgserv{
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .serv1 .dat{
+        width: 90%;
+    }
+    .serv1 .btnserv{
+        margin: auto;
+        width: 70%;
+    }
+
+    .forma, .forma2{
+        flex-direction: column;
+    }
+
+    .vmodal.active, .vmodal2.active{
+        position: absolute;
+        min-height: 900px;
+        height: 1100px;
+        transform: translate(-50%, -26%);
+        width: 100%;
+    }
+
+    .confirmar{
+        transform: translateY(100px);
+    }
+
+    .confirmar button, .confirmar2 button{
+        width: 50%;
+    }
+
+    .forma .col1, .forma .col2, .forma2 .col1, .forma2 .col2{
+        width: 100%;
+    }
+
+    .mensajemodal{
+        margin: 40px;
+    }
+
+    .calendario{
+        width: 90%;
+        margin: auto;
+    }
+
+    .horas{
+        margin-top: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 595px){
+    #modocel{
+        display: block;
+        text-align: center;
+    }
+
+    .cantprod{
+        display: flex;
+        width: 120px;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    
+    .cantprod a{
+        font-size: 1.1em;
+    }
+
+    .mcart{
+        display: none;
+    }
+
+    .ppag{
+        margin: 20px;
+    }
+}
+
+
+@media screen and (max-width: 435px){
+    .direccion{
+        width: 280px;
+        margin: auto;
+        height: 165px;
+        margin-bottom: 40px;
+        text-align: left;
+        padding-top: 15px;
+    }
+
+    .sucside{
+        margin: auto;
+        width: 260px;
+        text-align: center;
+        transform: translateX(14%);
+    }
+
+    
+    .map{
+        height: 350px;
+    }
+
+    .cordero{
+        height: 200px;
+        overflow: hidden;
+    }    
+
+    .cordero img{
+        width: 150%;
+        height: 100%;
+        transform: translateX(-15%);
+    }
+
+    .extr ul li{
+        font-size: 1.1em;
+        transform: translateX(-17%);
+    }
+
+    
+    .optica{
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-width: 378px){
+    .opa{
+        list-style: none;
+        transform: translateX(-15%);
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .map{
+        width: 70%;
+        height: 550px;
+    }
+
+    .cordero{
+        height: 315px;
+        overflow: hidden;
+    }    
+
+    .cordero img{
+        width: 150%;
+        height: 100%;
+        transform: translateX(-15%);
+    }
+
+    .optica{
+        height: 85vh;
+    }
+
+    .serv{
+        width: 70%;
+    }
 }
