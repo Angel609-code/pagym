@@ -1,0 +1,102 @@
+.Aros{
+    display: grid;
+    grid-template-areas: "sidemenu2 lista";
+    grid-template-columns: auto 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+.sidemenu2{
+    grid-area: sidemenu2;
+    justify-content: center;
+    padding: 20px 40px;
+    
+}
+
+.container.productos{
+    grid-area: lista;
+}
+
+.side{
+    border: 1px solid #0000ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.a1, .a2, .a3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #07196B;
+}
+
+.a1:hover, .a2:hover, .a3:hover{
+    text-decoration: none;
+}
+
+a{
+    color: #07196B;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.a1 i, .a2 i, .a3 i{
+    transition: all 0.3s;
+}
+
+.ul1, .ul2, .ul3{
+    display: none;
+}
+
+.ul1.active, .ul2.active, .ul3.active{
+    display: block;
+}
+
+.a1 i.active, .a2 i.active, .a3 i.active{
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+
+@media screen and (min-width: 1286px){
+    .footer{
+        padding: 20px 5%;
+    }
+    .sbns, .accesos, .siguenos .informacion{
+        margin-right: 5%;
+    }
+
+    .informacion{
+        margin-right: 0;
+        margin-left: 10%;
+        text-align: right;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width: 785px){
+
+
+    .Aros{
+        grid-template-areas: "sidemenu2"
+                             "lista"; 
+        grid-template-columns: none; 
+        width: 100%;
+    }
+
+    .sidemenu2 .side{
+        width: 34%;
+        font-size: 1.01em;
+        margin: auto;
+    }
+
+}
